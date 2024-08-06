@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '/utils/colors.dart';
 
 class PrimaryButton extends StatelessWidget {
-  final void Function()? onPressed;
+  final VoidCallback onPressed;
   final bool loading;
   final Widget child;
 

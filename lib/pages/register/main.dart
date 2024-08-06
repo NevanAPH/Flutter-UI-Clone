@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 // Import components
-import '/components/button.dart';
-import '/components/input.dart';
+import '../../widgets/button.dart';
+import '../../widgets/input.dart';
 
 // Import utilities
 import '/utils/colors.dart';
@@ -292,7 +292,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 const SizedBox(height: 16),
                 PrimaryButton(
                   onPressed: !_showClear || _onSubmit
-                      ? null
+                      ? () {}
                       : () {
                           setState(() {
                             _onSubmit = true;
