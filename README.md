@@ -1,8 +1,8 @@
-# diskord
+# Diskord: Clone app
 
-A new Flutter project.
+Build clone design of popular social app, Discord, with flutter.
 
-## Getting Started
+## For Beginners
 
 This project is a starting point for a Flutter application.
 
