@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 // Import utilities
 import '/utils/colors.dart';
+import '/widgets/button.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -60,19 +61,12 @@ class WelcomePage extends StatelessWidget {
                 ),
                 const Spacer(),
                 const SizedBox(height: 12),
-                ElevatedButton(
+                PrimaryButton(
                   onPressed: () {
                     Navigator.of(context).pushNamed('/register');
                   },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 32, vertical: 12),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(1000),
-                    ),
-                    minimumSize: const Size(double.infinity, 0),
-                  ),
+                  background: Colors.white,
+                  radius: 1000,
                   child: const Text(
                     "Register",
                     style: TextStyle(
@@ -80,22 +74,14 @@ class WelcomePage extends StatelessWidget {
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
                     ),
-                  ),
-                ),
+                  )),
                 const SizedBox(height: 12),
-                ElevatedButton(
+                PrimaryButton(
                   onPressed: () {
                     Navigator.of(context).pushNamed('/login');
                   },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: ThemeColor.button,
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 32, vertical: 12),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(1000),
-                    ),
-                    minimumSize: const Size(double.infinity, 0),
-                  ),
+                  background: ThemeColor.button,
+                  radius: 1000,
                   child: const Text(
                     "Log In",
                     style: TextStyle(
@@ -103,8 +89,7 @@ class WelcomePage extends StatelessWidget {
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
                     ),
-                  ),
-                ),
+                  )),
               ],
             ),
           )),

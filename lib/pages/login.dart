@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // Import components
-import '/widgets/containers.dart';
+import '../widgets/container.dart';
 import '/widgets/button.dart';
 import '/widgets/input.dart';
 
